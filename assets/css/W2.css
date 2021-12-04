@@ -28,15 +28,14 @@ ul.nav{
 }
 img.honeyyy{
     position: absolute;
-    top: 0%;
     z-index: -300;
 }
-section{
+/* /* section{
     margin: 3% 15% 0px 15%;
-} 
-section.s1{
-    margin-top: 3%;
-}
+} */
+/* section.s1{
+    margin-top: 6%;
+} */
 .title{
     line-height: 40px;
 }
@@ -44,13 +43,19 @@ section.s1{
     line-height: 60px;
 }
 section.s5{
-    margin-top: 10%;
     margin-bottom: 35px;
 }
 .hh{
-    column-count: 2;
-    /* background-color: #ffeeb0bd;
-    border-radius: 20px; */
+    width: 20%;
+    position: fixed;
+    margin: 0% 5%;
+    /* column-count: 2; */
+}
+.rr{
+    width: 60%;
+    margin: 1% 5%;
+    position: absolute;
+    right: 0;
 }
 /* -------------------------------------s1 */
 .isme-pc{
@@ -64,7 +69,7 @@ div.myname>h1{
     font-size: xx-large;
     text-align: center;
 }
-.infordiv{
+.inforh4{
     line-height: 30px;
     margin-top: 10px;
     margin-bottom: 5px;
@@ -76,7 +81,7 @@ div.myname>h1{
     margin-bottom: 5px;
     transition: all 0.5s ease-out;
 }
-.infordiv:hover{
+.inforh4:hover{
     color:#7E2E0B;
     cursor:default;
 }
@@ -84,10 +89,11 @@ div.myname>h1{
     color:#7E2E0B;
     cursor:default;
 }
+.Personal{
+    line-height: 25px;
+}
 .introduction{
     line-height: 25px;
-    text-align: justify;
-    margin-right: 25%;
 }
 .iconso{
     word-spacing: 6px;
@@ -305,30 +311,24 @@ div.license-2:hover .license-text{
 }
 /* -------------------------------------s4 */
 .school-pc{
-    position: absolute;
-    z-index: 1;
-    top: 218%;
+    text-align: center;
 }
-.arrowh{
-    position: absolute;
-    z-index: -1;
-    width: 80%;
-    left: 10%;
-}
+
 /* -------------------------------------s5 */
 .timeline{
-    padding: 10px 0 15% 0;
+    padding: 10px 0 20px;
     display: flex;
     flex-wrap: wrap;
 }
 .timeline li{
-    width:50%;
+    width: 50%;
     box-sizing: border-box;
     padding: 20px 0;
     position: relative;
 }
 .timeline-pc{
     border-radius: 5px;
+    margin:0% 50px;
 }
 .timeline li:nth-child(odd){
     padding-right: 100px;
@@ -369,44 +369,34 @@ div.license-2:hover .license-text{
 .timeline li:nth-child(even)::before{
     left: -10px;
 }
-.timeline .content{ /*大框框*/
-    text-align: center;
+.timeline .content{
     display: block;
     background-color: #fce07d;
     border:2px solid #7E2E0B;
     box-sizing: border-box;
-    padding: 20px 0px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 3px 3px 5px #888; 
     width: 100%;
-    height: 100%;
 }
-.contenttt{ /*活動名稱*/
+.contenttt{
     /* width: 100%; */
     text-align: center;
     color: #7E2E0B;
 }
-.contentdd{ /*活動時間*/
+.contentdd{
     margin-bottom: 3px;
     text-align: center;
 }
-.timeline div.content:hover .timeline-pc{
-    display:none;
+.timeline div:hover{
+    background-color: #FFF;
 }
-.timeline div:hover  .contentdd{
-    text-align: center;
-    display:none;
-}
-.timeline div:hover  .contenttt{
-    text-align: center;
-    display:none;
-}
-.timeline div:hover .context{
-    display:block;
-    margin:5% 12%;
-    font-size: 18px;
-}
+/* .timeline div:hover h2,
+.timeline div:hover p{
+    color: #fff;
+} */
 .timeline h4.context{
+    margin-left: 2px;
     color: #666;
     font-weight: 400;
     text-align: justify;
@@ -463,20 +453,3 @@ div.license-2:hover .license-text{
     background-color:#7e2d0bcc;
     color: #FFF ;
 }
-/* -------------------------------------menu */
-#menu {
-    background-color: #7E2E0B;
-    position: fixed;
-    text-align: center;
-    left: 0;
-    top: 25%;
-    width: 3%;
-    border-radius: 0px 15px 15px 0px;
-}
-#menu a{
-    color: #FFF;
-}
-#menu li.menutt{
-    line-height: 28px;
-}
-
