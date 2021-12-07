@@ -44,13 +44,10 @@ section.s1{
     line-height: 60px;
 }
 section.s5{
-    margin-top: 10%;
     margin-bottom: 35px;
 }
 .hh{
     column-count: 2;
-    /* background-color: #ffeeb0bd;
-    border-radius: 20px; */
 }
 /* -------------------------------------s1 */
 .isme-pc{
@@ -69,6 +66,11 @@ div.myname>h1{
     margin-top: 10px;
     margin-bottom: 5px;
     transition: all 0.5s ease-out;
+}
+.personal{
+    font-size: 18px;
+    font-style: oblique;
+    line-height: 28px;
 }
 .inforhp{
     line-height: 30px;
@@ -305,15 +307,9 @@ div.license-2:hover .license-text{
 }
 /* -------------------------------------s4 */
 .school-pc{
-    position: absolute;
-    z-index: 1;
-    top: 218%;
-}
-.arrowh{
-    position: absolute;
-    z-index: -1;
-    width: 80%;
-    left: 10%;
+    /* position: relative;
+     top:200%;
+    z-index: 1; */
 }
 /* -------------------------------------s5 */
 .timeline{
@@ -429,6 +425,9 @@ div.license-2:hover .license-text{
 .timeline li:nth-child(even) h2::after{
     left: 0;
 }
+.tticon{
+    margin-top: 13px;
+}
 /* -------------------------------------foot */
 .foot{
     width: 100%;
@@ -467,16 +466,17 @@ div.license-2:hover .license-text{
 #menu {
     background-color: #7E2E0B;
     position: fixed;
-    text-align: center;
     left: 0;
     top: 25%;
-    width: 3%;
+    width: 4%;
     border-radius: 0px 15px 15px 0px;
 }
 #menu a{
     color: #FFF;
 }
 #menu li.menutt{
-    line-height: 28px;
+    line-height: 32px;
+    margin:1px 2px;
+    text-align: right;
 }
 
