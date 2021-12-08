@@ -12,20 +12,6 @@ body{
     width: 100%;
     background-color:#FEF0BF;
 }
-ul.nav{
-    display: flex;
-    text-align: right;
-    justify-content:space-around;
-    padding-top: 30px;
-    font-size: 20px;
-    color: #7E2E0B;
-    font-weight: bolder;
-    word-spacing: 15px;
-}
-.nav>a{
-    color: inherit; 
-    text-decoration: none; 
-}
 img.honeyyy{
     position: absolute;
     top: 0%;
@@ -144,8 +130,6 @@ div.myname>h1{
     border-radius:15px;
     background: repeating-linear-gradient(135deg,#f8c058d3 0px,#f8c058d3 8px,#F3B749 8px,#F3B749 15.5px);
     background-position: 0 0;
-}
-.C:hover{
     animation: grow 5s linear infinite;
 }
 .Java{
@@ -155,8 +139,6 @@ div.myname>h1{
     border-radius:15px;
     background: repeating-linear-gradient(135deg,#f8c058d3 0px,#f8c058d3 8px,#F3B749 8px,#F3B749 15.5px);
     background-position: 0 0;
-}
-.Java:hover{
     animation: grow 5s linear infinite;
 }
 .Python{
@@ -166,8 +148,6 @@ div.myname>h1{
     border-radius:15px;
     background: repeating-linear-gradient(135deg,#f8c058d3 0px,#f8c058d3 8px,#F3B749 8px,#F3B749 15.5px);
     background-position: 0 0;
-}
-.Python:hover{
     animation: grow 5s linear infinite;
 }
 .Html {
@@ -177,8 +157,6 @@ div.myname>h1{
     border-radius:15px;
     background: repeating-linear-gradient(135deg,#f8c058d3 0px,#f8c058d3 8px,#F3B749 8px,#F3B749 15.5px);
     background-position: 0 0;
-}
-.Html:hover{
     animation: grow 5s linear infinite;
 }
 .CSS {
@@ -188,8 +166,6 @@ div.myname>h1{
     border-radius:15px;
     background: repeating-linear-gradient(135deg,#f8c058d3 0px,#f8c058d3 8px,#F3B749 8px,#F3B749 15.5px);
     background-position: 0 0;
-}
-.CSS:hover{
     animation: grow 5s linear infinite;
 }
 .JavaScript{
@@ -199,8 +175,6 @@ div.myname>h1{
     border-radius:15px;
     background: repeating-linear-gradient(135deg,#f8c058d3 0px,#f8c058d3 8px,#F3B749 8px,#F3B749 15.5px);
     background-position: 0 0;
-}
-.JavaScript:hover{
     animation: grow 5s linear infinite;
 }
 .Office {
@@ -210,8 +184,6 @@ div.myname>h1{
     border-radius:15px;
     background: repeating-linear-gradient(135deg,#f8c058d3 0px,#f8c058d3 8px,#F3B749 8px,#F3B749 15.5px);
     background-position: 0 0;
-}
-.Office:hover{
     animation: grow 5s linear infinite;
 }
 .Film{
@@ -221,8 +193,6 @@ div.myname>h1{
     border-radius:15px;
     background: repeating-linear-gradient(135deg,#f8c058d3 0px,#f8c058d3 8px,#F3B749 8px,#F3B749 14.5px);
     background-position: 0 0;
-}
-.Film:hover{
     animation: grow 5s linear infinite;
 }
 /* -------------------------------------s3 */
@@ -307,9 +277,18 @@ div.license-2:hover .license-text{
 }
 /* -------------------------------------s4 */
 .school-pc{
-    /* position: relative;
-     top:200%;
-    z-index: 1; */
+    margin:0% 10%;
+}
+.rotate{
+    animation: rotation 5s infinite linear;
+}
+@keyframes rotation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(356deg);
+    }
 }
 /* -------------------------------------s5 */
 .timeline{
@@ -444,23 +423,18 @@ div.license-2:hover .license-text{
     word-spacing: 2px;
 }
 /* -------------------------------------baktotop */
-.backtotop{
-    font-size:20px;
-    display: none;
+#BackTop{
     position: fixed; 
-    bottom: 20px; 
-    right: 30px; 
+    bottom: 28px; 
+    right:15px; 
     z-index: 100000; 
-    outline: none;
-    background-color: #7E2E0B;
-    color: #FFF;
     cursor: pointer; 
-    padding: 10px 13px; 
-    border-radius:15px;
+    padding: 10px 10px; 
+    transform: scale(1,1);
 }
-.backtotop:hover{
-    background-color:#7e2d0bcc;
-    color: #FFF ;
+#BackTop:hover{
+    transform: scale(1.1,1.1);
+    transition: all 0.5s ease-out;
 }
 /* -------------------------------------menu */
 #menu {
