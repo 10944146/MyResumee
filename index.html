@@ -14,42 +14,35 @@
     if (!flag)
     {
     text.style.color = "#7E2E0B";
+    text.style.border=400;
     flag = 1;
     }else{
     text.style.color = "";
     text.style.background = "";
     flag = 0;
     }
-    setTimeout("start()",500);
+    setTimeout("start()",500); //閃的時間間隔
     }
-</script>    
-    <script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
-<script>    
-    $(function() {
-    var $win = $(window);
-    var $backToTop = $('.js-back-to-top');
-    $win.scroll(function() {
-        if ($win.scrollTop() > 500) {
-        $backToTop.show();
-        } else {
-        $backToTop.hide();
-        }
-    });
-    $backToTop.click(function() {
-        $('html, body').animate({scrollTop: 0}, 200);
-    });
-    });
-</script>
+</script>   
+<script>
+window.onscroll = scrollFunction; //畫面捲動觸發
+
+function scrollFunction() { 
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    document.getElementById("BackTop").style.display = "block";
+  } else {
+    document.getElementById("BackTop").style.display = "none";
+  }
+}
+// 重置變數
+function topFunction() {
+  document.documentElement.scrollTop = 0; 
+}
+</script> 
 <body onload="start()">
     <div>
         <img class="honeyyy" src="assets/images/honey.png" alt="honney" width="100%" height="200px">
     </div>
-    
-    <!-- <nav>
-        <ul class="nav">
-            <p class="navtext"><a href="#">| 關於我AboutMe |</a><a href="#"> 習得技能Skill |</a><a href="#"> 專業證照License |</a><a href="#"> 學業經歷Education |</a><a href="#"> 活動經歷Experience |</a></p>
-        </ul>    
-    </nav> -->
     <section class="s1" id="me">
         <div class="hh">
             <div class="title">
@@ -197,10 +190,10 @@
                 <br><br>
                 <!-- <img  class="arrowh" src="assets/images/arrowy.png" width="100%" height="81px"> -->
                 <div class="school-pc">
-                    <a href="http://tw.school.uschoolnet.com/?id=es00000614"><img src="assets/images/school1.png" width="251px" height="256px"></a>
-                    <a href="http://163.30.122.141/homepjjh/modules/tadnews/#A"><img src="assets/images/school2.png" width="251px" height="256px"></a>
-                    <a href="http://www.clvsc.tyc.edu.tw/bin/home.php"><img src="assets/images/school3.png" width="251px" height="256px"></a>
-                    <a href="https://www1.cycu.edu.tw/default"><img src="assets/images/school4.png" width="251px" height="256px"></a>
+                    <a href="http://tw.school.uschoolnet.com/?id=es00000614"><img class="rotate" src="assets/images/school1.png" width="251px" height="256px"></a>
+                    <a href="http://163.30.122.141/homepjjh/modules/tadnews/#A"><img class="rotate" src="assets/images/school2.png" width="251px" height="256px"></a>
+                    <a href="http://www.clvsc.tyc.edu.tw/bin/home.php"><img class="rotate" src="assets/images/school3.png" width="251px" height="256px"></a>
+                    <a href="https://www1.cycu.edu.tw/default"><img class="rotate" src="assets/images/school4.png" width="251px" height="256px"></a>
                 </div>
             </div>
             <!-- <div class="schoolife-pc">
@@ -264,7 +257,8 @@
                     <h2><div  class="contenttt">企業概論路得啟智學園</div></h2>	
                     <h3 class="contentdd">/ 2020-11 /</h3>
                     <h4 class="context">
-                        沒想到上大學第一個分組報告就那麼硬！認識新同學之餘還要自己接洽合作對象，協調販售產品、安排販售時間，每一週都和同學們在討論報告，但牽涉到金錢所以我們也很謹慎，害怕錢漏掉或是少計了！雖然中間在算錢的時候真的有些混亂，但慶幸我們完成了這一份任務，看著我們安排的貨量可以全數售罄，還有些盈餘可以捐贈給原合作廠商就覺得很有成就感。
+                        上大學第一個報告就那麼硬！認識新同學之餘還要接洽合作對象，協調販售產品，每一週都和同學們討論報告，牽涉到金錢所以我們很謹慎！雖然中間在算錢的時候很混亂，但慶幸我們完成了任務，看著我們安排的貨量可以全數售罄，還有盈餘可捐贈給原合作廠商就很有成就感。
+                        <br><a href="https://www.instagram.com/baisers_de_mashmellow/?hl=zh-tw"><img class="tticon" src="assets/images/more.png" width="30px" height="30px" title="企業概論專案IG"></a>
                     </h4>
                 </div>
             </li>
@@ -328,6 +322,7 @@
                     <h3 class="contentdd">/ 2021-6 /</h3>
                     <h4 class="context">
                         起初是照著教授的安排，做了一段關於我們在管理學課程中服務學習相關的影片，後來教授發現了這一場比賽也趕緊叫我們報名，慶幸我們榮獲了佳作，除了影片能讓人更易理解動物保護的相關內容，也讓更多人知道這一份影片製作的目的，算是不同的宣傳方式。
+                        <br><a href="https://fb.watch/9KytiHc2yq/"><img class="tticon" src="assets/images/more.png" width="30px" height="30px" title="109年中原敘事力FB公告"></a>
                     </h4>
                 </div>
             </li>
@@ -348,7 +343,8 @@
                     <h2><div class="contenttt">資料結構雙人射擊遊戲</div></h2>	
                     <h3 class="contentdd">/ 2021-11 /</h3>
                     <h4 class="context">
-                        我是一個有3D暈的人，玩3D遊戲通常不到十分鐘我的頭就會非常的暈，就像暈車一樣～對我來說這一項任務最難的地方不是設定角色、槍枝、砲彈、道具箱，而是設計周圍的環境！因為擺放不到位，實際操作起來角色會卡住，但我方向感不太好，所以在喬角度的時候把自己搞得暈頭轉向，還好我完成了！
+                        我是玩3D遊戲通常不到十分鐘就會頭暈的人，對我來說這一項任務最難的地方不是設定角色、槍枝、砲彈、道具箱，而是設計周圍的環境！因為擺放不到位，實際操作起來角色會卡住，但我方向感不太好，所以在喬角度的時候把自己搞得暈頭轉向，還好我完成了！
+                        <br><a href="https://youtu.be/Zj59j22G0Ak"><img class="tticon" src="assets/images/youtube.png" width="30px" height="30px" title="雙人射擊遊戲影片"></a>
                     </h4>
                 </div>
             </li>
@@ -372,14 +368,13 @@
         <li class="menutt"><a href="#p5">Exp<img src="assets/images/honeyicon.png" height="20px" width="20px"></a></li>
         </ul>
     </div>
-    <button class="js-back-to-top backtotop" title="TOP">▲</button>
+    <div><img onclick="topFunction()" id="BackTop" title="Gotop" src="assets/images/spoon.png" height="150px" width="150px"></div>  
     <footer>
         <div class="foot">
             <p class="footp">Copyright©2021<br>CYCU IM, Wen-Ni,Li</p>
         </div>
     </footer>
    </div>
-    <!-- <script src="myScript.js"></script> -->
 
 </body>
 </html>
