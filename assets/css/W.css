@@ -120,7 +120,7 @@ div.myname>h1{
         background-position: 0 0;
     }
     100%{
-        background-position:240px 0;
+        background-position:500px 0; /*移動*/
     }
 }
 .C{
@@ -128,72 +128,72 @@ div.myname>h1{
     width: 80%;
     height: 20px;
     border-radius:15px;
-    background: repeating-linear-gradient(135deg,#f8c058d3 0px,#f8c058d3 8px,#F3B749 8px,#F3B749 15.5px);
+    background: repeating-linear-gradient(135deg,#f8c058d3 0px,#f8c058d3 3%,#F3B749 4%,#F3B749 8%);
     background-position: 0 0;
-    animation: grow 5s linear infinite;
+    animation: grow 5s linear infinite alternate; /*開始到結束的時間*/
 }
 .Java{
     font-weight: bolder;
     width: 80%;
     height: 20px;
     border-radius:15px;
-    background: repeating-linear-gradient(135deg,#f8c058d3 0px,#f8c058d3 8px,#F3B749 8px,#F3B749 15.5px);
+    background: repeating-linear-gradient(135deg,#f8c058d3 0px,#f8c058d3 3%,#F3B749 4%,#F3B749 8%);
     background-position: 0 0;
-    animation: grow 5s linear infinite;
+    animation: grow 5s linear infinite alternate; /*開始到結束的時間*/
 }
 .Python{
     font-weight: bolder;
     width: 70%;
     height: 20px;
     border-radius:15px;
-    background: repeating-linear-gradient(135deg,#f8c058d3 0px,#f8c058d3 8px,#F3B749 8px,#F3B749 15.5px);
+    background: repeating-linear-gradient(135deg,#f8c058d3 0px,#f8c058d3 3%,#F3B749 4%,#F3B749 7.9%);
     background-position: 0 0;
-    animation: grow 5s linear infinite;
+    animation: grow 5s linear infinite alternate; /*開始到結束的時間*/
 }
 .Html {
     font-weight: bolder;
     width: 80%;
     height: 20px;
     border-radius:15px;
-    background: repeating-linear-gradient(135deg,#f8c058d3 0px,#f8c058d3 8px,#F3B749 8px,#F3B749 15.5px);
+    background: repeating-linear-gradient(135deg,#f8c058d3 0px,#f8c058d3 3%,#F3B749 4%,#F3B749 8%);
     background-position: 0 0;
-    animation: grow 5s linear infinite;
+    animation: grow 5s linear infinite alternate; /*開始到結束的時間*/
 }
 .CSS {
     font-weight: bolder;
     width: 70%;
     height: 20px;
     border-radius:15px;
-    background: repeating-linear-gradient(135deg,#f8c058d3 0px,#f8c058d3 8px,#F3B749 8px,#F3B749 15.5px);
+    background: repeating-linear-gradient(135deg,#f8c058d3 0px,#f8c058d3 3%,#F3B749 4%,#F3B749 7.9%);
     background-position: 0 0;
-    animation: grow 5s linear infinite;
+    animation: grow 5s linear infinite alternate; /*開始到結束的時間*/
 }
 .JavaScript{
     font-weight: bolder;
     width: 60%; 
     height: 20px;
     border-radius:15px;
-    background: repeating-linear-gradient(135deg,#f8c058d3 0px,#f8c058d3 8px,#F3B749 8px,#F3B749 15.5px);
+    background: repeating-linear-gradient(135deg,#f8c058d3 0px,#f8c058d3 3%,#F3B749 4%,#F3B749 8.5%);
     background-position: 0 0;
-    animation: grow 5s linear infinite;
+    animation: grow 5s linear infinite alternate; /*開始到結束的時間*/
 }
 .Office {
     font-weight: bolder;
     width: 90%; 
     height: 20px;
     border-radius:15px;
-    background: repeating-linear-gradient(135deg,#f8c058d3 0px,#f8c058d3 8px,#F3B749 8px,#F3B749 15.5px);
+    background: repeating-linear-gradient(135deg,#f8c058d3 0px,#f8c058d3 3%,#F3B749 4%,#F3B749 6.8%);
     background-position: 0 0;
-    animation: grow 5s linear infinite;
+    animation: grow 5s linear infinite alternate; /*開始到結束的時間*/
 }
 .Film{
     font-weight: bolder;
     width: 75%; 
     height: 20px;
     border-radius:15px;
-    background: repeating-linear-gradient(135deg,#f8c058d3 0px,#f8c058d3 8px,#F3B749 8px,#F3B749 14.5px);
+    background: repeating-linear-gradient(135deg,#f8c058d3 0px,#f8c058d3 3%,#F3B749 4%,#F3B749 7.9%);
     background-position: 0 0;
-    animation: grow 5s linear infinite;
+    animation: grow 5s linear infinite alternate; /*開始到結束的時間*/
 }
 /* -------------------------------------s3 */
 .license{
@@ -277,7 +277,9 @@ div.license-2:hover .license-text{
 }
 /* -------------------------------------s4 */
 .school-pc{
-    margin:0% 10%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
 }
 .rotate{
     animation: rotation 5s infinite linear;
@@ -357,7 +359,6 @@ div.license-2:hover .license-text{
     height: 100%;
 }
 .contenttt{ /*活動名稱*/
-    /* width: 100%; */
     text-align: center;
     color: #7E2E0B;
 }
@@ -380,9 +381,13 @@ div.license-2:hover .license-text{
     display:block;
     margin:5% 12%;
     font-size: 18px;
+     -webkit-user-select:none;/*禁止反白 */
+    -moz-user-select:none;/*禁止反白 */
+    -o-user-select:none;/*禁止反白 */
+    user-select:none;/*禁止反白 */
 }
 .timeline h4.context{
-    color: #666;
+    color: #353C42;
     font-weight: 400;
     text-align: justify;
     display: none;
@@ -424,6 +429,7 @@ div.license-2:hover .license-text{
 }
 /* -------------------------------------baktotop */
 #BackTop{
+    display: none;
     position: fixed; 
     bottom: 28px; 
     right:15px; 
