@@ -10,18 +10,16 @@
 <script>
     var flag = 0;
     function start(){
-    var text = document.getElementById("blink");
-    if (!flag)
-    {
-    text.style.color = "#7E2E0B";
-    text.style.border=400;
-    flag = 1;
-    }else{
-    text.style.color = "";
-    text.style.background = "";
-    flag = 0;
-    }
-    setTimeout("start()",500); //閃的時間間隔
+        var text = document.getElementById("blink");
+        if (!flag){
+            text.style.color = "#7E2E0B";
+            flag = 1;
+        }else{
+            text.style.color = "";
+            text.style.background = "";
+            flag = 0;
+        }
+        setTimeout("start()",500); //閃的時間間隔
     }
 </script>   
 <script>
@@ -30,7 +28,8 @@ window.onscroll = scrollFunction; //畫面捲動觸發
 function scrollFunction() { 
   if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
     document.getElementById("BackTop").style.display = "block";
-  } else {
+  } 
+  else {
     document.getElementById("BackTop").style.display = "none";
   }
 }
@@ -188,20 +187,25 @@ function topFunction() {
         <div class="school">
             <div>
                 <br><br>
-                <!-- <img  class="arrowh" src="assets/images/arrowy.png" width="100%" height="81px"> -->
                 <div class="school-pc">
-                    <a href="http://tw.school.uschoolnet.com/?id=es00000614"><img class="rotate" src="assets/images/school1.png" width="251px" height="256px"></a>
-                    <a href="http://163.30.122.141/homepjjh/modules/tadnews/#A"><img class="rotate" src="assets/images/school2.png" width="251px" height="256px"></a>
-                    <a href="http://www.clvsc.tyc.edu.tw/bin/home.php"><img class="rotate" src="assets/images/school3.png" width="251px" height="256px"></a>
-                    <a href="https://www1.cycu.edu.tw/default"><img class="rotate" src="assets/images/school4.png" width="251px" height="256px"></a>
+                    <div>
+                        <a href="http://tw.school.uschoolnet.com/?id=es00000614"><img class="rotate" src="assets/images/school1.png" width="251px" height="256px"></a>
+                        <h3>新勢國小</h3>
+                    </div>
+                    <div>
+                        <a href="http://163.30.122.141/homepjjh/modules/tadnews/#A"><img class="rotate" src="assets/images/school2.png" width="251px" height="256px"></a>     
+                        <h3>平鎮國中</h3>
+                    </div>
+                    <div>
+                        <a href="http://www.clvsc.tyc.edu.tw/bin/home.php"><img class="rotate" src="assets/images/school3.png" width="251px" height="256px"></a>
+                        <h3>中壢高商</h3>
+                    </div>
+                    <div>
+                        <a href="https://www1.cycu.edu.tw/default"><img class="rotate" src="assets/images/school4.png" width="251px" height="256px"></a>
+                        <h3>中原大學</h3>
+                    </div>
                 </div>
             </div>
-            <!-- <div class="schoolife-pc">
-                <img src="assets/images/604.jpg" width="200px" height="150px">
-                <img src="assets/images/clvsc.jpg" width="200px" height="150px">
-                <img src="assets/images/cycu.jpg" width="200px" height="150px">
-            </div>
-            <h3 class="school-text">新勢國小  平鎮國中  中壢高商  中原大學</h3> -->
         </div>
     </section> 
     <section class="s5" id="p5" >
