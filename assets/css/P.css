@@ -1,0 +1,106 @@
+ul.slides {
+    position: relative;
+    width: 600px;
+    height: 450px;
+    list-style: none;
+    margin: 0px 30%;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: #555 2px 4px 5px;
+  }
+  
+  li.slide {
+    margin: 0;
+    padding: 0;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Helvetica;
+    font-size: 120px;
+    transition: .5s transform ease-in-out;
+  }
+  /* 圖片放置位址 */
+  .slide:nth-of-type(2) {
+    left: 100%;
+  }
+  
+  .slide:nth-of-type(3) {
+    left: 200%;
+  }
+  .slide:nth-of-type(4) {
+    left: 300%;
+  }
+  .slide:nth-of-type(5) {
+    left: 400%;
+  }
+  
+  input[type="radio"] {
+    position: relative;
+    z-index: 100;
+    display: none;
+  }
+  
+  .controls-visible {
+    position: absolute;
+    width: 100%;
+    bottom: 12px;
+    text-align: center;
+  }
+  
+  .controls-visible label {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #fb5e;
+    border-radius: 50%;
+    margin: 0 3px;
+    border: 2px solid #fff;
+    cursor: pointer;
+  }
+ /* 現在畫面按鈕顏色  */
+  .slides input[type="radio"]:nth-of-type(1):checked ~ .controls-visible label:nth-of-type(1) {
+    background-color: #7E2E0B;
+  }
+  
+  .slides input[type="radio"]:nth-of-type(2):checked ~ .controls-visible label:nth-of-type(2) {
+    background-color: #7E2E0B;
+  }
+  
+  .slides input[type="radio"]:nth-of-type(3):checked ~ .controls-visible label:nth-of-type(3) {
+    background-color: #7E2E0B;
+  }
+
+  .slides input[type="radio"]:nth-of-type(4):checked ~ .controls-visible label:nth-of-type(4) {
+    background-color: #7E2E0B;
+  }
+
+  .slides input[type="radio"]:nth-of-type(5):checked ~ .controls-visible label:nth-of-type(5) {
+    background-color: #7E2E0B;
+  }
+/* 圖片移動 */
+  .slides input[type="radio"]:nth-of-type(1):checked ~ .slide {
+    transform: translatex(0%);
+  }
+  
+  .slides input[type="radio"]:nth-of-type(2):checked ~ .slide {
+    transform: translatex(-100%);
+  }
+  
+  .slides input[type="radio"]:nth-of-type(3):checked ~ .slide {
+    transform: translatex(-200%);
+  }
+
+  .slides input[type="radio"]:nth-of-type(4):checked ~ .slide {
+    transform: translatex(-300%);
+  }
+
+  .slides input[type="radio"]:nth-of-type(5):checked ~ .slide {
+    transform: translatex(-400%);
+  }
+
